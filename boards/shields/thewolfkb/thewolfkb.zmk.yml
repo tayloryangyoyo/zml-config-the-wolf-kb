@@ -1,8 +1,8 @@
 file_format: "1"
-id: thewolfkb-kb
-name: thewolfkb-kb
+id: thewolfkb
+name: thewolfkb
 type: shield
-url: https://github.com/iuv/thewolfkb-kb
+url: https://github.com/tayloryangyoyo/zml-config-the-wolf-kb
 requires: [pro_micro]
 features:
   - keys

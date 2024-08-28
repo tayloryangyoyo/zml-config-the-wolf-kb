@@ -2,7 +2,7 @@
 if SHIELD_IXX_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "thewolfkb-kb"
+    default "thewolfkb"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
