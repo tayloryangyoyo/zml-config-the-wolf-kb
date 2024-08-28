@@ -1,5 +1,8 @@
-config SHIELD_THEWOLFKB_LEFT
-    def_bool $(shields_list_contains,thewolfkb_left)
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
 
-config SHIELD_THEWOLFKB_RIGHT
-    def_bool $(shields_list_contains,thewolfkb_right)
+config SHIELD_IXX_LEFT
+    def_bool $(shields_list_contains,ixx_left)
+
+config SHIELD_IXX_RIGHT
+    def_bool $(shields_list_contains,ixx_right)
