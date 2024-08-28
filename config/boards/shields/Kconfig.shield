@@ -1,0 +1,5 @@
+config SHIELD_THEWOLFKB_LEFT
+    def_bool $(shields_list_contains,TheWolfKB_left)
+
+config SHIELD_THEWOLFKB_RIGHT
+    def_bool $(shields_list_contains,TheWolfKB_right)

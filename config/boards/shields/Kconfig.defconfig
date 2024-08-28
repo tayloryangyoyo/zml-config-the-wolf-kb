@@ -1,0 +1,17 @@
+if THEWOLFKB_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "TheWolfKB"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if THEWOLFKB_LEFT || THEWOLFKB_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
+
