@@ -4,7 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "ixx.dtsi"
+#include "thewolfkb.dtsi"
+
+&default_transform {
+    col-offset = <5>;
+};
 
 &kscan0 {
     col-gpios

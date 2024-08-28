@@ -1,0 +1,12 @@
+file_format: "1"
+id: thewolfkb-kb
+name: thewolfkb-kb
+type: shield
+url: https://github.com/iuv/thewolfkb-kb
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - thewolfkb_left
+  - thewolfkb_right
+
