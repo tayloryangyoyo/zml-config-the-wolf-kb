@@ -1,4 +1,4 @@
-#include "TheWolfKB.dtsi"
+#include "thewolfkb.dtsi"
 
 &default_transform {
     col-offset = <17>;
