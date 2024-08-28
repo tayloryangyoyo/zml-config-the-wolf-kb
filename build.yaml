@@ -19,6 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: thewolfkb_left
+    shield: ixx_left
   - board: nice_nano_v2
-    shield: thewolfkb_right
+    shield: ixx_right
