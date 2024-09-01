@@ -12,9 +12,9 @@
         combo_esc
         {
             //按鍵組合的延遲(在幾秒內必須按下這兩個按鍵)
-            timeout - ms = <50>;
+            timeout-ms = <50>;
             //按鍵陣列的組合Q+T
-            key - positions = <0 4>;
+            key-positions = <0 4>;
             bindings = <&out OUT_TOG>;
         };
     };
