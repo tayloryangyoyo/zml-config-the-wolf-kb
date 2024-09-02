@@ -26,6 +26,7 @@
            
         >;
     };
+	//上面最後沒有分號會出錯
 
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-direct";
