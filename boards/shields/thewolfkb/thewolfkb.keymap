@@ -25,17 +25,6 @@
             //按鍵陣列的組合A+G+Space
             key-positions = <5 9 19>;
             bindings = <&to 2>;
-            layer = <0>;
-        };
-
-        to_default_layer
-        {
-            //按鍵組合的延遲(在幾秒內必須按下這兩個按鍵)
-            timeout-ms = <50>;
-            //按鍵陣列的組合A+G+Space
-            key-positions = <5 9 19>;
-            bindings = <&to 0>;
-            layer = <2>;
         };
     };
 };
