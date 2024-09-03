@@ -4,9 +4,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-
-    behaviors{};
-
     //新增複數按鍵的組合
     combos
     {
@@ -50,15 +47,6 @@
                 &kp TAB     &kp A           &kp S           &kp D       &kp F           &kp H       &kp J           &kp K       &kp L       &kp COLON 
                 &kp LSHIFT  &kp Z           &kp X           &kp C       &kp V           &kp N       &kp M           &kp COMMA   &kp DOT     &kp SLASH 
                 &kp LCTRL   &kp LEFT_ALT    &kp LEFT_GUI    &kp LSHIFT  &kp SPACE       &kp RETURN  &kp &to 0   &kp TAB     &kp RCTRL   &kp BACKSPACE>;
-        };
-
-        system_layer
-        {
-            bindings = <
-                &kp Q       &kp W           &kp E           &kp R       &kp T           &kp Y       &kp U           &kp I       &kp O       &kp P 
-                &kp A       &kp S           &kp D           &kp F       &kp G           &kp H       &kp J           &kp K       &kp L       &kp COLON 
-                &kp Z       &kp X           &kp C           &kp V       &kp B           &kp N       &kp M           &kp COMMA   &kp DOT     &kp SLASH 
-                &kp LCTRL   &kp LEFT_ALT    &kp LEFT_GUI    &kp LSHIFT  &kp SPACE       &kp RETURN  &kp BACKSPACE   &kp TAB     &kp RCTRL   &kp BACKSPACE>;
         };
     };
 };
