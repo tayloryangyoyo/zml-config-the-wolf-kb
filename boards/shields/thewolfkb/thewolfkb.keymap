@@ -19,18 +19,6 @@
             key-positions = <0 4>;
             bindings = <&out OUT_TOG>;
         };
-
-        combo_esc{
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_tab{
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-            bindings = <&kp TAB>;
-        };
     };
 
     keymap
