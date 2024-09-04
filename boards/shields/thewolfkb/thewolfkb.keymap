@@ -38,10 +38,10 @@
             layers = <0>;
         };
 
-        combo_comma{
+        combo_single_quote{
             timeout-ms = <50>;
             key-positions = <28 29>;
-            bindings = <&kp COMMA>;
+            bindings = <&kp SINGLE_QUOTE>;
             layers = <0>;
         };
 
