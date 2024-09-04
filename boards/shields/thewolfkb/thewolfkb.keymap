@@ -69,7 +69,7 @@
                 &kp N2  &kp N2  &kp N2  &kp N2              &kp N2              &kp KP_N7  &kp KP_N8    &kp KP_N9   &kp PLUS   &kp ASTERISK 
                 &kp N2  &kp N2  &kp N2  &kp BACKSLASH       &kp SINGLE_QUOTE    &kp KP_N4  &kp KP_N5    &kp KP_N6   &kp MINUS  &kp SLASH 
                 &kp N2  &kp N2  &kp N2  &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &kp KP_N1  &kp KP_N2    &kp KP_N3   &kp UP     &kp EQUAL 
-                &trans  &trans  &trans  &trans              &trans              &kp KP_N0  &kp DOT      &kp LEFT    &kp DOWN   &kp RIGHT>;
+                &kp N2  &kp N2  &kp N2  &kp N2              &kp N2              &kp KP_N0  &kp DOT      &kp LEFT    &kp DOWN   &kp RIGHT>;
         };
 
         ow_layer
