@@ -59,19 +59,19 @@
             bindings = <
                 &kp F1  &kp F2  &kp F3      &kp F4          &kp F5        &kp F6  &kp F7  &kp F8      &kp F9    &kp F10
                 &kp N1  &kp N2  &kp N3      &kp N4          &kp N5        &kp N6  &kp N7  &kp N8      &kp N9    &kp N0
-                &kp N1  &kp N1  &kp N1      &kp N1          &kp N1        &kp N1  &kp N1  &kp N1      &kp F11   &kp F12
-                &kp N1  &kp N1  &kp N1      &kp N1          &kp N1        &kp N1  &kp N1  &kp N1      &kp MINUS &kp EQUAL
+                &trans  &trans  &trans      &trans          &trans        &trans  &trans  &trans      &kp F11   &kp F12
+                &trans  &trans  &trans      &trans          &trans        &trans  &trans  &trans      &kp MINUS &kp EQUAL
         };
 
         keypad_layer
         {
             bindings = <
-                &kp N2  &kp N2  &kp N2  &kp N2              &kp N2              &kp KP_N7  &kp KP_N8    &kp KP_N9   &kp PLUS   &kp P 
-                &kp N2  &kp N2  &kp N2  &kp BACKSLASH       &kp SINGLE_QUOTE    &kp KP_N4  &kp KP_N5    &kp KP_N6   &kp MINUS  &kp COLON 
+                &kp N2  &kp N2  &kp N2  &kp N2              &kp N2              &kp KP_N7  &kp KP_N8    &kp KP_N9   &kp PLUS   &kp ASTERISK 
+                &kp N2  &kp N2  &kp N2  &kp BACKSLASH       &kp SINGLE_QUOTE    &kp KP_N4  &kp KP_N5    &kp KP_N6   &kp MINUS  &kp SLASH 
                 &kp N2  &kp N2  &kp N2  &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &kp KP_N1  &kp KP_N2    &kp KP_N3   &kp UP     &kp EQUAL 
-                &kp N2  &kp N2  &kp N2  &kp N2              &kp N2              &kp KP_N0  &kp DOT      &kp LEFT    &kp DOWN   &kp RIGHT>;
+                &trans  &trans  &trans  &trans              &trans              &kp KP_N0  &kp DOT      &kp LEFT    &kp DOWN   &kp RIGHT>;
         };
-//add keybind
+        
         ow_layer
         {
             bindings = <
