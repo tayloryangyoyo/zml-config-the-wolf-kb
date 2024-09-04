@@ -29,13 +29,6 @@
             bindings = <&kp TAB>;
         };
 
-        combo_ow{
-            timeout-ms = <50>;
-            key-positions = <0 4 15 19>;
-            bindings = <&to 3>;
-        };
-
-
     };
 
     keymap
@@ -76,15 +69,6 @@
                 &kp TAB     &kp A           &kp S           &kp D       &kp F           &kp H       &kp J           &kp K       &kp L       &kp COLON 
                 &kp LSHIFT  &kp Z           &kp X           &kp C       &kp V           &kp N       &kp M           &kp COMMA   &kp DOT     &kp SLASH 
                 &kp LCTRL   &kp LEFT_ALT    &kp LEFT_GUI    &kp LSHIFT  &kp SPACE       &kp RETURN  &to 0   &kp TAB     &kp RCTRL   &kp BACKSPACE>;
-        };
-
-        system_layer
-        {
-            bindings = <
-                &kp BT_CLR  &kp BT_CLR_ALL	&kp BT_PRV      &kp BT_NXT          &kp BT_SEL 0        &kp N7  &kp N8  &kp N9      &kp PLUS   &kp P 
-                &kp T       &kp S           &kp D           &kp BACKSLASH       &kp SINGLE_QUOTE    &kp N4  &kp N5  &kp N6      &kp MINUS  &kp COLON 
-                &kp Z       &kp X           &kp C           &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &kp N1  &kp N2  &kp N3      &kp UP     &kp EQUAL 
-                &kp LCTRL   &kp LEFT_ALT    &kp LEFT_GUI    &kp LSHIFT          &kp LSHIFT          &kp N0  &kp DOT &kp LEFT    &kp DOWN   &kp RIGHT>;
         };
     };
 };
