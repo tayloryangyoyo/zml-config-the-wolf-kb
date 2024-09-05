@@ -58,11 +58,46 @@
             bindings = <&kp TAB>;
             layers = <0>;
         };
+        
+        combo_page_up{
+            timeout-ms = <50>;
+            key-positions = <28 39>;
+            bindings = <&kp PAGE_UP>;
+            layers = <0>;
+        };
+        
+        combo_page_down{
+            timeout-ms = <50>;
+            key-positions = <38 39>;
+            bindings = <&kp PAGE_DOWN>;
+            layers = <0>;
+        };
+        
+        combo_home{
+            timeout-ms = <50>;
+            key-positions = <38 39>;
+            bindings = <&kp HOME>;
+            layers = <0>;
+        };
+
+        combo_end{
+            timeout-ms = <50>;
+            key-positions = <36 37>;
+            bindings = <&kp END>;
+            layers = <0>;
+        };
 
         combo_ow{
             timeout-ms = <50>;
             key-positions = <5 9>;
             bindings = <&to 3>;
+            layers = <0>;
+        };
+
+        combo_system{
+            timeout-ms = <50>;
+            key-positions = <35 39>;
+            bindings = <&to 4>;
             layers = <0>;
         };
 
@@ -107,5 +142,16 @@
                 &kp LSHIFT  &kp Z           &kp X           &kp C       &kp V           &kp N       &kp M           &kp COMMA   &kp DOT     &kp SLASH 
                 &kp LCTRL   &kp LEFT_ALT    &kp LEFT_GUI    &kp LSHIFT  &kp SPACE       &kp RETURN  &to 0   &kp TAB     &kp RCTRL   &kp BACKSPACE>;
         };
+        
+        system_layer
+        {
+            bindings = <
+                &bt BT_CLR  &bt BT_PRV      &bt BT_NXT      &bt BT_SEL 0    &kp N4      &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
+                &kp N4      &kp N4    &kp N4    &kp N4     &kp N4                       &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
+                &kp N4      &kp N4    &kp N4    &kp N4     &kp N4                       &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
+                &kp N4      &kp N4    &kp N4    &kp N4     &kp N4                       &kp N4      &to 0     &kp N4   &kp N4   &kp N4>;
+        };
+
+        
     };
 };
