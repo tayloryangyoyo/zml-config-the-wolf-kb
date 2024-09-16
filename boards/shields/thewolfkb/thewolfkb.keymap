@@ -21,14 +21,12 @@
             timeout-ms = <50>;
             key-positions = <18 19>;
             bindings = <&kp RETURN>;
-            layers = <0>;
         };
 
         combo_delete{
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp BACKSPACE>;
-            layers = <0>;
         };
         
         combo_comma{
@@ -75,14 +73,14 @@
         
         combo_home{
             timeout-ms = <50>;
-            key-positions = <38 39>;
+            key-positions = <28 37>;
             bindings = <&kp HOME>;
             layers = <0>;
         };
 
         combo_end{
             timeout-ms = <50>;
-            key-positions = <36 37>;
+            key-positions = <37 38>;
             bindings = <&kp END>;
             layers = <0>;
         };
@@ -97,7 +95,7 @@
         combo_system{
             timeout-ms = <50>;
             key-positions = <35 39>;
-            bindings = <&to 4>;
+            bindings = <&mo 4>;
             layers = <0>;
         };
 
@@ -146,10 +144,10 @@
         system_layer
         {
             bindings = <
-                &bt BT_CLR  &bt BT_PRV      &bt BT_NXT      &bt BT_SEL 0    &kp N4      &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
+                &bt BT_PRV  &bt BT_NXT &bt BT_SEL 0  &kp N4 &bt N4                      &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
                 &kp N4      &kp N4    &kp N4    &kp N4     &kp N4                       &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
                 &kp N4      &kp N4    &kp N4    &kp N4     &kp N4                       &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
-                &kp N4      &kp N4    &kp N4    &kp N4     &kp N4                       &kp N4      &to 0     &kp N4   &kp N4   &kp N4>;
+                &kp BT_CLR  &kp N4    &kp N4    &kp N4     &bootloader                  &kp N4      &kp N4    &kp N4   &kp N4   &kp N4>;
         };
 
         
