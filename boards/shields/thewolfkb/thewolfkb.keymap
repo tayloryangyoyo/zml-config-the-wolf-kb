@@ -144,10 +144,10 @@
         system_layer
         {
             bindings = <
-                &bt BT_PRV  &bt BT_NXT &bt BT_SEL 0  &kp N4 &bt N4                      &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
+                &bt BT_PRV  &bt BT_NXT &bt BT_SEL 0  &kp N4 &kp N4                      &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
                 &kp N4      &kp N4    &kp N4    &kp N4     &kp N4                       &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
                 &kp N4      &kp N4    &kp N4    &kp N4     &kp N4                       &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
-                &kp BT_CLR  &kp N4    &kp N4    &kp N4     &bootloader                  &kp N4      &kp N4    &kp N4   &kp N4   &kp N4>;
+                &bt BT_CLR  &kp N4    &kp N4    &kp N4     &bootloader                  &kp N4      &kp N4    &kp N4   &kp N4   &kp N4>;
         };
 
         
