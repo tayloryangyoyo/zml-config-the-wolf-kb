@@ -56,6 +56,13 @@
             layers = <0>;
         };
       
+        combo_gui{
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&kp LEFT_GUI>;
+            layers = <0>;
+        };
+
         combo_l_space{
             timeout-ms = <50>;
             key-positions = <33 34>;
@@ -134,7 +141,7 @@
                 &lt LCTRL Z &lt LEFT_ALT X  &lt LSHIFT C    &lt 5 V       &lt 2 B         &lt 1 N         &kp M       &kp COMMA    &kp DOT      &kp SLASH 
             >;
         };
-                &kp LEFT_GUI
+                
         f_key_layer
         {
             bindings = <
