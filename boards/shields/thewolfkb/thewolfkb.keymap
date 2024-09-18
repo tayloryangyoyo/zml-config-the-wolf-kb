@@ -23,6 +23,12 @@
             bindings = <&kp RETURN>;
         };
 
+        combo_grave{
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp GRAVE>;
+        };
+
         combo_delete{
             timeout-ms = <50>;
             key-positions = <18 19>;
@@ -47,6 +53,20 @@
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&kp TAB>;
+            layers = <0>;
+        };
+      
+        combo_l_space{
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&kp SPACE>;
+            layers = <0>;
+        };
+
+        combo_r_space{
+            timeout-ms = <50>;
+            key-positions = <35 36>;
+            bindings = <&kp SPACE>;
             layers = <0>;
         };
         
@@ -92,6 +112,13 @@
             layers = <0>;
         };
 
+        combo_system2{
+            timeout-ms = <50>;
+            key-positions = <30 34>;
+            bindings = <&mo 4>;
+            layers = <0>;
+        };
+
     };
 
     keymap
@@ -104,10 +131,10 @@
                 &kp N1      &kp N2          &kp N3          &kp N4      &kp N5          &kp N6          &kp N7          &kp N8      &kp N9    &kp N0
                 &kp Q       &kp W           &kp E           &kp R       &kp T           &kp Y           &kp U           &kp I       &kp O       &kp P 
                 &kp A       &kp S           &kp D           &kp F       &kp G           &kp H           &kp J           &kp K       &kp L       &kp SEMICOLON 
-                &lt Z LCTRL      &kp X           &kp C           &kp V       &kp B           &kp N           &kp M           &kp DOT   &kp UP      &kp SLASH 
+                &lt LCTRL Z &lt LEFT_ALT X  &lt LSHIFT C    &lt 5 V       &lt 2 B         &lt 1 N         &kp M       &kp COMMA    &kp DOT      &kp SLASH 
             >;
         };
-
+                &kp LEFT_GUI
         f_key_layer
         {
             bindings = <
@@ -141,9 +168,16 @@
                 &bt BT_PRV  &bt BT_NXT &bt BT_SEL 0  &kp N4 &kp N4                      &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
                 &kp N4      &kp N4    &kp N4    &kp N4     &kp N4                       &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
                 &kp N4      &kp N4    &kp N4    &kp N4     &kp N4                       &kp N4      &kp N4    &kp N4   &kp N4   &kp N4 
-                &bt BT_CLR  &kp N4    &kp N4    &kp N4     &bootloader                  &kp N4      &kp N4    &kp N4   &kp N4   &kp N4>;
+                &bt BT_CLR  &kp N4    &kp N4    &kp N4     &bootloader                  &kp N4      &kp N4    &kp N4   &kp N4   &bootloader>;
         };
 
-        
+        nav_layer
+        {
+            bindings = <
+                &kp N5      &kp N5    &kp N5    &kp N5     &kp N5                       &kp N5      &kp N5    &kp N5   &kp N5   &kp N5 
+                &kp N5      &kp N5    &kp N5    &kp N5     &kp N5                       &kp N5      &kp N5    &kp UP   &kp N5   &kp N5 
+                &kp N5      &kp N5    &kp N5    &kp N5     &kp N5                       &kp N5      &kp LEFT    &kp DOWN   &kp RIGHT   &kp N5 
+                &kp N5      &kp N5    &kp N5    &kp N5     &kp N5                       &kp N5      &kp N5    &kp N5   &kp N5   &kp N5>;
+        };
     };
 };
