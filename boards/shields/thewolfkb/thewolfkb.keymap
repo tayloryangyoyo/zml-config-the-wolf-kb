@@ -127,6 +127,28 @@
 
     };
 
+    macros {
+        ascii_underscore: ascii_underscore {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N9 &kp KP_N5>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        ascii_backslash: ascii_backslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N9 &kp KP_N2>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+
     keymap
     {
         compatible = "zmk,keymap";
@@ -149,7 +171,7 @@
                 &kp F1  &kp F2  &kp F3      &kp F4          &kp F5        &kp F6  &kp F7            &kp F8                 &kp F9              &kp F10
                 &kp N1  &kp N1  &kp N1      &kp N1          &kp N1        &kp N1  &kp N1            &kp N1                 &kp F11             &kp F12
                 &kp N1  &kp N1  &kp N1      &kp N1          &kp N1        &kp N1  &kp N1            &kp N1                 &kp N1              &kp SINGLE_QUOTE
-                &kp N1  &kp N1  &kp N1      &kp N1          &kp N1        &kp N1  &kp RIGHT_BRACKET &kp BACKSLASH          &kp N1              &kp N1
+                &kp N1  &kp N1  &kp N1      &kp N1          &kp N1        &kp N1  &kp RIGHT_BRACKET &kp BACKSLASH          &ascii_underscore   &ascii_backslash
                 &kp N1  &kp N1  &kp N1      &kp N1          &kp N1        &kp N1  &kp PIPE          &kp N1                 &kp N1              &kp N1>;
         };
          
