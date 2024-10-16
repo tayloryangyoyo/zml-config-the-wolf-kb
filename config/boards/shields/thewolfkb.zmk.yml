@@ -1,0 +1,12 @@
+file_format: "1"
+id: thewolfkb
+name: thewolfkb
+type: shield
+url: https://github.com/tayloryangyoyo/zml-config-the-wolf-kb
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - thewolfkb_left
+  - thewolfkb_right
+
