@@ -10,11 +10,11 @@
     kscan1: kscan_direct {
         compatible = "zmk,kscan-gpio-direct";
         input-gpios 
-            = <&pro_micro 15 (GPIO_ACTIVE_LOW)>,// move up
-              <&pro_micro 18 (GPIO_ACTIVE_LOW)>,// move down
-              <&pro_micro 19 (GPIO_ACTIVE_LOW)>,// move left
-              <&pro_micro 20 (GPIO_ACTIVE_LOW)>,// move right
-              <&pro_micro 21 (GPIO_ACTIVE_LOW)>;// right click
+            = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,// move up
+              <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,// move down
+              <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,// move left
+              <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,// move right
+              <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;// right click
     };
 
     kscan2:kscan_matrix {
