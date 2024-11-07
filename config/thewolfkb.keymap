@@ -10,7 +10,7 @@
     #define KEYPAD  2
     #define GAME    3
     #define SYSTEM  4
-    // #define MEDIA  2
+    #define MOUSE   5
 
     //新增複數按鍵的組合
     combos
@@ -103,6 +103,13 @@
             layers = <0>;
         };
 
+        combo_mouse{
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&mo MOUSE>;
+            layers = <0>;
+        };
+
     };
 
 
@@ -154,13 +161,21 @@
         system_layer
         {
             bindings = <
-                &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0  &kp N4  &kp N4           &kp N4  &kp N4  &kp N4  &kp N4  &kp N4 
-                &kp N4      &kp N4      &kp N4        &kp N4  &kp N4           &kp N4  &kp N4  &kp N4  &kp N4  &kp N4 
-                &kp N4      &kp N4      &kp N4        &kp N4  &kp N4           &kp N4  &kp N4  &kp N4  &kp N4  &kp N4 
-                &bt BT_CLR  &kp N4      &kp N4        &kp N4  &bootloader      &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
+                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp BT_SEL 3  &kp BT_SEL 4      &kp N4  &kp N4  &kp N4  &kp N4  &kp N4 
+                &kp BT_PRV    &kp BT_NXT    &kp N4        &kp N4        &kp N4            &kp N4  &kp N4  &kp N4  &kp N4  &kp N4 
+                &kp N4        &kp N4        &kp N4        &kp N4        &kp N4            &kp N4  &kp N4  &kp N4  &kp N4  &kp N4 
+                &bt BT_CLR    &kp N4        &kp N4        &kp N4        &bootloader       &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
             >;
         };
 
-        
+        mouse_layer
+        {
+            bindings = <
+                &none  &none  &none  &none  &none      &none  &none  &none           &msc MOVE_UP     &none 
+                &none  &none  &none  &none  &none      &none  &none  &msc MOVE_LEFT  &msc MOVE_DOWN   &msc MOVE_RIGHT 
+                &none  &none  &none  &none  &none      &none  &none  &mkp LCLK       &mmv MOVE_UP     &mkp RCLK 
+                &none  &none  &none  &none  &none      &none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
+            >;
+        };
     };
 };
