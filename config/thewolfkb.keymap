@@ -132,19 +132,19 @@
         {
             bindings = <
                 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5        &kp F6         &kp F7            &kp F8             &kp F9     &kp F10
-                &kp N1  &kp N2  &kp N3  &kp N4  &kp N5        &kp N6         &kp N7            &kp N8             &kp N9     &kp N0
-                &kp N1  &kp N1  &kp N1  &kp N1  &kp N1        &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F11    &kp F12
-                &kp N1  &kp N1  &kp N1  &kp N1  &kp N1        &kp N1         &kp N1            &kp N1             &kp MINUS  &kp EQUAL
+                &none   &kp N2  &kp N3  &kp N4  &kp N5        &kp N6         &kp N7            &kp N8             &kp N9     &kp N0
+                &none   &none   &none   &none   &none         &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F11    &kp F12
+                &none   &none   &none   &none   &none         &none          &none             &none              &kp MINUS  &kp EQUAL
             >;
         };
 
         keypad_layer
         {
             bindings = <
-                &kp N2  &kp N2  &kp N2          &msc MOVE_UP    &kp N2               &kp KP_N7  &kp KP_N8   &kp KP_N9       &kp PLUS         &kp ASTERISK 
-                &kp N2  &kp N2  &msc MOVE_LEFT  &msc MOVE_DOWN  &msc MOVE_RIGHT      &kp KP_N4  &kp KP_N5   &kp KP_N6       &kp MINUS        &kp SLASH 
-                &kp N2  &kp N2  &kp N2          &mkp LCLK       &mkp RCLK            &kp KP_N1  &kp KP_N2   &kp KP_N3       &mmv MOVE_UP     &kp EQUAL 
-                &kp N2  &kp N2  &kp N2          &kp N2          &kp N2               &kp KP_N0  &kp DOT     &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
+                &none  &none  &none  &none  &none       &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp PLUS   &kp ASTERISK 
+                &none  &none  &none  &none  &none       &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp MINUS  &kp SLASH 
+                &none  &none  &none  &none  &none       &kp KP_N1  &kp KP_N2   &kp KP_N3  &none      &kp EQUAL 
+                &none  &none  &none  &none  &none       &kp KP_N0  &kp DOT     &none      &none      &none
             >;
         };
 
@@ -161,10 +161,10 @@
         system_layer
         {
             bindings = <
-                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp BT_SEL 3  &kp BT_SEL 4      &kp N4  &kp N4  &kp N4  &kp N4  &kp N4 
-                &kp BT_PRV    &kp BT_NXT    &kp N4        &kp N4        &kp N4            &kp N4  &kp N4  &kp N4  &kp N4  &kp N4 
-                &kp N4        &kp N4        &kp N4        &kp N4        &kp N4            &kp N4  &kp N4  &kp N4  &kp N4  &kp N4 
-                &bt BT_CLR    &kp N4        &kp N4        &kp N4        &bootloader       &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
+                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp BT_SEL 3  &kp BT_SEL 4      &none  &none  &none  &none  &none 
+                &kp BT_PRV    &kp BT_NXT    &none         &none         &none             &none  &none  &none  &none  &none 
+                &none         &none         &none         &none         &none             &none  &none  &none  &none  &none 
+                &bt BT_CLR    &none         &none         &none         &bootloader       &none  &none  &none  &none  &none
             >;
         };
 
