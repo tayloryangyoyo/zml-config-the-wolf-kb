@@ -17,7 +17,7 @@
     {
         compatible = "zmk,combos";
 
-        //新增複數按鍵的組合
+        // 全layer通用
         combo_enter{
             timeout-ms = <50>;
             key-positions = <18 19>;
@@ -30,6 +30,7 @@
             bindings = <&kp BACKSPACE>;
         };
         
+        // 默認layer
         combo_comma{
             timeout-ms = <50>;
             key-positions = <26 27>;
