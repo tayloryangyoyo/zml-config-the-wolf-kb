@@ -1,17 +1,8 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include "thewolfkb.dtsi"
 
-/ {
-    kscan1:kscan_matrix {
-        compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
-        wakeup-source;
-        
+
+&kscan0 {
+
     col-gpios
         = <&pro_micro 0 (GPIO_ACTIVE_HIGH)>
         , <&pro_micro 2 (GPIO_ACTIVE_HIGH)>
@@ -26,5 +17,5 @@
         , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
-    };
+
 };
