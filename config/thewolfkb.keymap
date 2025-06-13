@@ -17,13 +17,13 @@
     {
         compatible = "zmk,combos";
         //切換藍牙跟有線模式
-        combo_bt{
-            //按鍵組合的延遲(在幾秒內必須按下這兩個按鍵)
-            timeout-ms = <50>;
-            //按鍵陣列的組合Q+T
-            key-positions = <0 4>;
-            bindings = <&out OUT_TOG>;
-        };
+        // combo_bt{
+        //     //按鍵組合的延遲(在幾秒內必須按下這兩個按鍵)
+        //     timeout-ms = <50>;
+        //     //按鍵陣列的組合Q+T
+        //     key-positions = <0 4>;
+        //     bindings = <&out OUT_TOG>;
+        // };
 
         // 全layer通用
         combo_enter{
@@ -179,9 +179,9 @@
         {
             bindings = <
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &none  &none  &none  &none  &none 
-                &bt BT_PRV    &bt BT_NXT    &none         &none         &none             &none  &none  &none  &none  &none 
-                &none         &none         &none         &none         &none             &none  &none  &none  &none  &none 
-                &bt BT_CLR    &none         &none         &none         &bootloader       &none  &none  &none  &none  &none
+                &none  			&none	&none	&none	&none             &none  &none  &none  &none  &none 
+                &none         	&none	&none	&none	&none             &none  &none  &none  &none  &none 
+                &bt BT_CLR    	&none	&none	&none	&bootloader       &none  &none  &none  &none  &none
             >;
         };
 
