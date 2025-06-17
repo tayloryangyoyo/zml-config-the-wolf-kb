@@ -1,9 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
-
-#include <dt-bindings/zmk/pointing.h>
-
 / {
         physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
@@ -78,17 +75,4 @@
 	//上面最後沒有分號會出錯
 
 
-};
-&mmv {
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
-    time-to-max-speed-ms = <400>;
-    acceleration-exponent = <2>;
-};
-
-&msc {
-    x-input-code = <INPUT_REL_HWHEEL>;
-    y-input-code = <INPUT_REL_WHEEL>;
-    time-to-max-speed-ms = <300>;
-    acceleration-exponent = <0>;
 };
