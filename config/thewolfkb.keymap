@@ -14,14 +14,14 @@
     x-input-code = <INPUT_REL_X>;
     y-input-code = <INPUT_REL_Y>;
     time-to-max-speed-ms = <500>;
-    acceleration-exponent = <2>;
+    acceleration-exponent = <1>;
 };
 
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
     y-input-code = <INPUT_REL_WHEEL>;
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <2>;
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
 };
 
 
