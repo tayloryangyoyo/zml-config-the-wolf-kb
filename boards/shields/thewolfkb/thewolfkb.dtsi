@@ -1,6 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
+
+#include <dt-bindings/zmk/pointing.h>
+
 / {
         physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
